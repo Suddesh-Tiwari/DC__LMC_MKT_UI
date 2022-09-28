@@ -1,0 +1,108 @@
+.home_banner {
+    background-image: linear-gradient(to right bottom, $blue-royal 0%, $purple 100%);
+    padding: 6rem 0rem;
+    text-align: center;
+    &__heading {
+        &--primary {
+            font-size: 6rem;
+            font-family: 'Circular Std Black';
+            color: $white;
+            padding-bottom: 1.8rem;
+        }
+        &--secondary {
+            font-size: 4rem;
+            font-family: 'Circular Std Black';
+            color: $white;
+            padding-bottom: 1.8rem;
+        }
+    }
+    &__card {
+        width: 45rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        &--sign-up {
+            background-color: $white;
+        }
+        &--sign-in {
+            background-color: $light-grey;
+        }
+        &-heading {
+            &--primary {
+                font-size: 3.8rem;
+                font-weight: 700;
+            }
+            &--secondary-one {
+                font-size: 2.4rem;
+                font-weight: 600;
+                span {
+                    display: block;
+                }
+            }
+            &--secondary-two {
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+        }
+        &-form {
+            height: 70%;
+        }
+        .form-group {
+            text-align: left !important;
+            &:last-child {
+            margin-bottom: 5rem;
+            }
+            label {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding-bottom: .5rem;
+            }
+            input {
+                font-size: 1.5rem;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+            .form-control:focus {
+                    border-color: 1px solid $purple;
+            }
+        }
+        &-CTA {
+            background-color: $pink-pantone;
+            padding: 1rem 2rem;
+            border-radius: 0.6rem;
+            font-size: 1.5rem;
+            color: $white;
+            text-decoration: none;
+            &:focus, &:hover {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+        &-solutions {
+            display: block;
+            background-color: $blue-royal;
+            margin: 1rem 0;
+            padding: 2.5rem 0;
+            font-size: 1.8rem;
+            color: $white;
+            border-radius: 1rem;
+            &:focus, &:hover {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+    &__para  {
+        max-width: 114.8rem;
+        margin: auto;
+        padding: 0;
+        color: $white;
+        &--first {
+            font-size: 2.4rem;
+            margin: 3rem 0;
+        }
+        &--second {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.banner-bottom-strip {
+    background-image: linear-gradient(90deg, $blue-sky 0%, $pink-pantone 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 46%, 51% 58%, 0 47%);
+    // clip-path: polygon(0 0, 100% 0, 100% 46%, 51% 58%, 0 47%);
+
+
+    p {
+        font-size: 3.4rem;
+        color: $white;
+        font-family: Circular Std Bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .dropdown-arrow {
+        width: 6rem;
+        height: 6rem;
+        background: #e93692;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        padding: 0.4%;
+        position: absolute;
+    }
+
+}

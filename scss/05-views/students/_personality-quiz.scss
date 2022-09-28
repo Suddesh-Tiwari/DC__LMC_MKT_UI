@@ -1,0 +1,30 @@
+.personality-quiz {
+    padding: 10rem 0;
+
+    &__feature {
+        color: $blue-sky;
+    }
+
+    .quiz-img {
+        width: 50rem;
+    }
+
+    button {
+        font-size: 1.8rem;
+        color: $white;
+        background-color: $pink-pantone;
+        padding: 1.8rem 3.5rem;
+        border: none;
+        border-radius: 0.6rem;
+    }
+
+    .qr-code {
+        border: .3rem solid $blue-sky;
+        border-radius: .6rem;
+        padding: 0rem;
+
+        img {
+            max-width: 15rem;
+        }
+    }
+}

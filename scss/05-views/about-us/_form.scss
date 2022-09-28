@@ -1,0 +1,36 @@
+.form-section {
+    background-color: $white-ghost;
+    padding: 20rem 0;
+    position: relative;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-family: Circular Std Book;
+        text-align: center;
+    }
+
+    form {
+        background-color: $white;
+        padding: 8rem 5rem 10rem;
+    }
+    .form-wrapper {
+        max-width: 48rem;
+        margin: auto;
+
+        button {
+            background-color: $blue-dark-2;
+            color: $white;
+            font-family: Circular Std Medium;
+            font-size: 1.8rem;
+            width: 100%;
+            padding: 2rem 0;
+            border-radius: .8rem;
+        }
+    }
+
+}

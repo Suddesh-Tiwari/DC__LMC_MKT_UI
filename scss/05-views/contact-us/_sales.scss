@@ -1,0 +1,24 @@
+.sales {
+    background-image: linear-gradient(to right bottom, $blue-sky 0%, $blue-dark 100%);
+    background-size: cover;
+    padding: 20rem 0;
+    color: $white !important;
+
+    h2 {
+        text-align: center;
+    }
+
+    .mobile a {
+        color: $white;
+    }
+    
+    .email a {
+        color: $white;
+    }
+    
+    .linkedin-icon {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+}

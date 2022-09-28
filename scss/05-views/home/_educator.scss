@@ -1,0 +1,47 @@
+.educator_section {
+    color: $white;
+    padding: 25rem 0 16rem;
+    background-image: linear-gradient(180deg, $blue-sky 0%, $blue-dark 100%);
+    &__image {
+        margin-top: -10rem;
+    }
+    // &__educator {}
+    &__heading {
+        &--primary {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+        &--secondary {
+            font-size: 2.2rem;
+            margin: 2rem 0;
+        }
+    }
+    &__feature {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: 400;
+        svg {
+            height: 1.7rem;
+        }
+    }
+    &__moreLMC {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 3.5rem 0;
+    }
+    &__CTA {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $white;
+        padding: 2rem 6rem;
+        background-color: $pink-pantone;
+        border: none;
+        border-radius: .6rem;
+        &:focus, 
+        &:focus-visible {
+            border: none;
+            outline: none;
+        }
+    }
+}

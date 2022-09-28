@@ -1,0 +1,22 @@
+.back-To-Top {
+    width: 10rem;
+    height: 10rem;
+    background: $pink-pantone;
+    border-radius: 50%;
+    border: 2px solid $white;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(1750%, -50%);
+    padding: 0.4%;
+
+    a {
+        font-size: 1.2rem;
+        color: $white;
+        text-decoration: none;
+
+        svg {
+            fill: $white;
+        }
+    }
+}

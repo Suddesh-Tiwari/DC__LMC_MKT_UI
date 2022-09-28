@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Circular Std';
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Circular Std Bold';
+    padding-bottom: 1.5rem;
+}
+p {
+    font-size: 1.6rem;
+    font-family: 'Circular Std Medium';
+    &:not(:last-child) {
+        padding-bottom: 1rem;
+    }
+}
+img {
+    width: 100%;
+}
+.wrapper,
+.wrapper-1720 {
+    max-width: 172rem;
+    margin: auto;
+}
+.wrapper-1460 {
+    max-width: 146rem;
+    margin: auto;
+}
+.wrapper-1350 {
+    max-width: 135rem;
+    margin: auto;
+}
