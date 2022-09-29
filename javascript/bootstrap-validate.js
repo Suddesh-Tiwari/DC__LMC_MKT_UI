@@ -25,7 +25,7 @@ email.addEventListener("blur", () => {
   let str = email.value;
   let regex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  console.log(regex, str);
+
   if (regex.test(str)) {
     email.classList.remove("is-invalid");
     document.getElementById("mail").innerHTML = "";
