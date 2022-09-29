@@ -452,8 +452,8 @@
                             <label for="weHelpYouWith">
                                 What can we help you with?*
                             </label>
-                            <select class="form-control" name="weHelpYouWith" id="weHelpYouWith">
-                                <option selected>
+                            <select class="form-control" name="weHelpYouWith" id="weHelpYouWith" required>
+                                <option value="">
                                     Free Demo
                                 </option>
                                 <option value="">
@@ -471,25 +471,26 @@
                             <label for="name">
                                 Your Name*
                             </label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="school">
                                 Company
                             </label>
-                            <input type="text" id="school" class="form-control" placeholder="Enter your company name">
+                            <input type="text" id="school" class="form-control" placeholder="Enter your company name" required autocomplete="off" >
                         </div>
                         <div class="form-group">
                             <label for="phone">
                                 Phone number*
                             </label>
-                            <input type="number" id="phone" class="form-control" placeholder="Enter your phone number">
+                            <input type="text" id="phone" class="form-control" placeholder="Enter your phone number"  required autocomplete="off">
+                            <span id="number" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="email">
                                 Email address*
                             </label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email address">
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address"  required autocomplete="off">
                             <span id="mail" class="text-danger"></span>
                         </div>
                         <div class="form-group">
@@ -635,7 +636,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="./javascript/bootstrap-validate.js"></script>
+        <script src="./javascript/aboutValidate.js"></script>
 </body>
 
 </html>
