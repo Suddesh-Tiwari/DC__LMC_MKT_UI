@@ -6357,6 +6357,12 @@ footer {
 .navbar-light .navbar-nav .nav-link {
   color: #000000 !important; }
 
+@media screen and (min-width: 1199px) {
+  .navigation#top .bottomSignIN {
+    display: block; }
+  .navigation#top .topSignIN {
+    display: none; } }
+
 @media screen and (max-width: 1199px) {
   .navigation#top .container-fluid {
     padding: 0; }
@@ -6375,19 +6381,35 @@ footer {
   .navigation#top #navbarSupportedContent {
     width: 100vw;
     height: 100vh !important; }
-  .navbar-nav {
+  .navigation#top .bottomSignIN {
+    display: none; }
+  .navigation#top .navigation__lang {
+    padding-top: 0;
+    width: 100%; }
+  .navigation#top .nav-link .dropdown-toggle {
+    margin-left: 28px !important; }
+  .navigation#top .dropdown-item {
+    padding: 3px 28px; }
+  .navigation#top .navbar-nav {
     padding: 20px 28px;
     padding-bottom: 0; }
-    .navbar-nav:last-child {
+    .navigation#top .navbar-nav:last-child {
       border-bottom: 2px solid #DBDFEF;
-      padding-top: 0; }
-  .navbar-toggler {
+      padding: 0; }
+  .navigation#top .nav-link.dropdown-toggle.d-flex.align-items-center {
+    margin-left: 28px; }
+  .navigation#top .navbar-nav .dropdown-menu {
+    width: 100%;
+    border: 0 !important;
+    margin-top: 10px;
+    border-top: 2px solid #DBDFEF !important; }
+  .navigation#top .navbar-toggler {
     border: 0;
     line-height: 0;
     padding: 0;
     outline: none !important;
     margin-right: 20px; }
-    .navbar-toggler svg {
+    .navigation#top .navbar-toggler svg {
       height: 32px; } }
 
 .home_banner {

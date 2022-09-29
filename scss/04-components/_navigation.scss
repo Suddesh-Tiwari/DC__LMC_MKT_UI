@@ -87,11 +87,24 @@
     color: $black-dark  !important;
 }
 
+@media screen and (min-width:1199px) {
+    .navigation#top {
+        .bottomSignIN {
+            display: block;
+        }
+
+        .topSignIN {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width:1199px) {
-    .navigation#top{
-        .container-fluid{
+    .navigation#top {
+        .container-fluid {
             padding: 0;
-            &::before{
+
+            &::before {
                 content: '';
                 position: absolute;
                 width: 100%;
@@ -101,33 +114,68 @@
                 left: 0;
             }
         }
-        .navbar{
+
+        .navbar {
             padding: 0;
         }
-        .navigation__logo{
+
+        .navigation__logo {
             margin-left: 20px;
         }
+
         #navbarSupportedContent {
             width: 100vw;
             height: 100vh !important;
         }
-    }
-    .navbar-nav{
-        padding: 20px 28px;
-        padding-bottom: 0;
-        &:last-child{
-            border-bottom: 2px solid #DBDFEF;
-            padding-top:0;
+
+        .bottomSignIN {
+            display: none;
         }
-    }
-    .navbar-toggler {
-        border: 0;
-        line-height: 0;
-        padding: 0;
-        outline: none !important;
-        margin-right: 20px;
-        svg {
-            height: 32px;
+
+        .navigation__lang {
+            padding-top: 0;
+            width: 100%;
+        }
+
+        .nav-link .dropdown-toggle {
+            margin-left: 28px !important;
+        }
+
+        .dropdown-item {
+            padding: 3px 28px;
+        }
+
+        .navbar-nav {
+            padding: 20px 28px;
+            padding-bottom: 0;
+
+            &:last-child {
+                border-bottom: 2px solid #DBDFEF;
+                padding: 0;
+            }
+        }
+
+        .nav-link.dropdown-toggle.d-flex.align-items-center {
+            margin-left: 28px;
+        }
+
+        .navbar-nav .dropdown-menu {
+            width: 100%;
+            border: 0 !important;
+            margin-top: 10px;
+            border-top: 2px solid #DBDFEF !important;
+        }
+
+        .navbar-toggler {
+            border: 0;
+            line-height: 0;
+            padding: 0;
+            outline: none !important;
+            margin-right: 20px;
+
+            svg {
+                height: 32px;
+            }
         }
     }
 }
