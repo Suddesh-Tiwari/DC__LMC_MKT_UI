@@ -6213,7 +6213,6 @@ img {
   border: 2px solid #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
   padding: 0.4%; }
   .dropdown-arrow a {
     font-size: 1.8rem;
@@ -6309,10 +6308,10 @@ footer {
   background: #ffffff;
   z-index: 1000; }
   .navigation__logo {
-    width: 15rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 15rem;
     padding-right: 1.5rem; }
-  @media (min-width: 1199px) {
+  @media (min-width: 991px) {
     .navigation__tab .nav-item {
       padding: 0 1.5rem; } }
   @media (max-width: 1199px) {
@@ -6416,6 +6415,8 @@ footer {
   background-image: linear-gradient(to right bottom, #452EB9 0%, #832DBA 100%);
   padding: 6rem 0rem;
   text-align: center; }
+  .home_banner__row {
+    margin-top: 9rem; }
   .home_banner__heading--primary {
     font-size: 6rem;
     font-family: 'Circular Std Black';
@@ -6429,9 +6430,31 @@ footer {
   .home_banner__card {
     width: 45rem;
     border-radius: 1rem;
-    padding: 2rem; }
+    padding: 2rem;
+    box-shadow: 0rem 1rem 2rem #00000048; }
     .home_banner__card--sign-up {
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      position: relative; }
+    .home_banner__card .bird {
+      position: absolute;
+      top: -7.8rem;
+      right: -6.5rem;
+      max-width: 17.5rem; }
+    .home_banner__card .leopard {
+      position: absolute;
+      top: -5.2rem;
+      left: .9rem;
+      max-width: 13.5rem; }
+    .home_banner__card .bear {
+      position: absolute;
+      top: 18.5rem;
+      left: -8.4rem;
+      max-width: 9.5rem; }
+    .home_banner__card .lezard {
+      position: absolute;
+      bottom: -6.6rem;
+      left: -4.6rem;
+      max-width: 16rem; }
     .home_banner__card--sign-in {
       background-color: #dbdfef; }
     .home_banner__card-heading--primary {
@@ -6446,7 +6469,7 @@ footer {
       font-size: 1.8rem;
       font-weight: 600; }
     .home_banner__card-form {
-      height: 70%; }
+      height: 60%; }
     .home_banner__card .form-group {
       text-align: left !important; }
       .home_banner__card .form-group:last-child {
@@ -6497,20 +6520,19 @@ footer {
 .student_section {
   padding: 8rem 0 6rem; }
   .student_section__image {
-    width: 87%; }
+    width: 100%; }
   .student_section__heading--primary {
     font-size: 3rem;
     text-transform: uppercase; }
   .student_section__heading--secondary {
     font-size: 2.2rem;
-    margin: 2rem 0; }
+    margin-bottom: 1.8rem; }
   .student_section__feature {
     font-size: 1.6rem;
-    line-height: 2rem;
-    font-weight: 400;
+    font-family: Circular Std Medium;
     color: #5A47C3; }
     .student_section__feature svg {
-      height: 1.7rem; }
+      height: 1.6rem; }
   .student_section__moreLMC {
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -6528,13 +6550,44 @@ footer {
     .student_section__CTA:focus, .student_section__CTA:focus-visible {
       border: none;
       outline: none; }
+    @media screen and (max-width: 991px) {
+      .student_section__CTA {
+        width: 100%; } }
 
 .educator_section {
   color: #ffffff;
   padding: 25rem 0 16rem;
   background-image: linear-gradient(180deg, #5A47C3 0%, #402EA8 100%); }
-  .educator_section__image {
-    margin-top: -10rem; }
+  .educator_section__image-educator {
+    position: relative;
+    z-index: 2001; }
+    .educator_section__image-educator__big-circle {
+      position: absolute; }
+      .educator_section__image-educator__big-circle svg {
+        width: 100%; }
+      @media screen and (min-width: 991px) {
+        .educator_section__image-educator__big-circle {
+          right: 0%;
+          bottom: 0%;
+          transform: translate(24%, -85%); } }
+      @media screen and (max-width: 991px) {
+        .educator_section__image-educator__big-circle {
+          left: 0%;
+          top: 0%;
+          transform: translate(-12%, 60%);
+          width: 100%; } }
+    .educator_section__image-educator__small-circle {
+      position: absolute; }
+      @media screen and (min-width: 991px) {
+        .educator_section__image-educator__small-circle {
+          right: 0%;
+          bottom: 0%;
+          transform: translate(30%, -170%); } }
+      @media screen and (max-width: 991px) {
+        .educator_section__image-educator__small-circle {
+          right: 0%;
+          top: 0%;
+          transform: translate(0%, 350%); } }
   .educator_section__heading--primary {
     font-size: 3rem;
     text-transform: uppercase; }
@@ -6556,6 +6609,7 @@ footer {
     font-size: 1.8rem;
     font-weight: 500;
     color: #ffffff;
+    text-align: center;
     padding: 2rem 6rem;
     background-color: #e93692;
     border: none;
@@ -6563,6 +6617,9 @@ footer {
     .educator_section__CTA:focus, .educator_section__CTA:focus-visible {
       border: none;
       outline: none; }
+    @media screen and (max-width: 991px) {
+      .educator_section__CTA {
+        width: 100%; } }
 
 .banner-bottom-strip {
   background-image: linear-gradient(90deg, #5A47C3 0%, #e93692 100%); }
@@ -6637,29 +6694,10 @@ footer {
 
 .TILG-history {
   background-image: linear-gradient(to right bottom, #5A47C3, #402EA8);
+  clip-path: polygon(0% 0%, 2.5% 1%, 5% 1.5%, 7.5% 2%, 10% 2.5%, 12.5% 3%, 15% 3.5%, 17.5% 4%, 20% 4.5%, 22.5% 5%, 25% 5.5%, 27.5% 6%, 30% 6.5%, 32.5% 7%, 35% 7.5%, 37.5% 8%, 40% 8.5%, 42.5% 8.75%, 45% 9%, 47.5% 9%, 50% 9%, 52.5% 9%, 55% 9%, 57.5% 8.75%, 60% 8.5%, 62.5% 8%, 65% 7.5%, 67.5% 7%, 70% 6.5%, 72.5% 6%, 75% 5.5%, 77.5% 5%, 80% 4.5%, 82.5% 4%, 85% 3.5%, 87.5% 3%, 90% 2.5%, 92.5% 2%, 95% 1.5%, 97.5 1%, 100% 0%, 100% 100%, 0% 100%);
   color: #ffffff;
   padding: 20rem 0;
   position: relative; }
-  .TILG-history::before {
-    content: '';
-    position: absolute;
-    background-color: #ffffff;
-    top: 0;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 10rem;
-    border-radius: 50%; }
-  .TILG-history::after {
-    content: '';
-    position: absolute;
-    background-color: #ffffff;
-    bottom: 0;
-    left: 0;
-    transform: translateY(50%);
-    width: 100%;
-    height: 10rem;
-    border-radius: 50%; }
 
 .united {
   padding: 10rem 0; }
