@@ -3,6 +3,7 @@
     top: 0;
     background: $white;
     z-index: 1000;
+
     &__logo {
         width: 100%;
         max-width: 15rem;
@@ -14,7 +15,8 @@
             @media (min-width: 991px) {
                 padding: 0 1.5rem;
             }
-            @media (max-width: 991px) {
+
+            @media (max-width: 1199px) {
                 padding: 1.5rem 0;
             }
         }
@@ -24,14 +26,15 @@
             font-family: Circular Std Medium;
             color: $black-dark;
             position: relative;
-    
+
             @media (min-width: 1199px) {
+
                 &:focus,
                 &:hover,
-                &.active{
+                &.active {
                     color: $black-dark;
-    
-                    &::after{
+
+                    &::after {
                         content: '';
                         position: absolute;
                         width: 100%;
@@ -43,8 +46,8 @@
                 }
             }
         }
-    }    
-    
+    }
+
     &__sign-up {
         a {
             font-size: 1.5rem;
@@ -55,9 +58,9 @@
             background-color: $pink-pantone;
             border-radius: 0.6rem;
             padding: 1rem 1.5rem !important;
-        }   
+        }
     }
-    
+
     &__lang {
         a {
             font-size: 1.8rem;
@@ -81,8 +84,50 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $black-dark !important;
+    color: $black-dark  !important;
 }
-.dropdown-menu {
-    min-width: 20rem;
+
+@media screen and (max-width:1199px) {
+    .navigation#top{
+        .container-fluid{
+            padding: 0;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                top: 75px;
+                background: #DBDFEF;
+                left: 0;
+            }
+        }
+        .navbar{
+            padding: 0;
+        }
+        .navigation__logo{
+            margin-left: 20px;
+        }
+        #navbarSupportedContent {
+            width: 100vw;
+            height: 100vh !important;
+        }
+    }
+    .navbar-nav{
+        padding: 20px 28px;
+        padding-bottom: 0;
+        &:last-child{
+            border-bottom: 2px solid #DBDFEF;
+            padding-top:0;
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+        line-height: 0;
+        padding: 0;
+        outline: none !important;
+        margin-right: 20px;
+        svg {
+            height: 32px;
+        }
+    }
 }
