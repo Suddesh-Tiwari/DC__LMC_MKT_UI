@@ -4,17 +4,17 @@
     background: $white;
     z-index: 1000;
     &__logo {
-        width: 15rem;
-        max-width: 100%;
+        width: 100%;
+        max-width: 15rem;
         padding-right: 1.5rem;
     }
 
     &__tab {
         .nav-item {
-            @media (min-width: 1199px) {
+            @media (min-width: 991px) {
                 padding: 0 1.5rem;
             }
-            @media (max-width: 1199px) {
+            @media (max-width: 991px) {
                 padding: 1.5rem 0;
             }
         }
@@ -82,4 +82,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: $black-dark !important;
+}
+.dropdown-menu {
+    min-width: 20rem;
 }

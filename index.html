@@ -15,7 +15,7 @@
     <section class="navigation" id="top">
         <div class="wrapper-1720">
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-xl navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand navigation__logo" href="./index.html">
                         <svg viewBox="0 0 1520.72 709.1">
                             <defs>
@@ -194,13 +194,13 @@
                             </g>
                         </svg>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler order-sm-2 order-md-2" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse navigation__tab" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse navigation__tab order-lg-1" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link topNavLink active" href="javascript:void(0)">Home</a>
@@ -247,6 +247,10 @@
                                     </a>
                                 </div>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="order-sm-1 order-md-1 order-lg-2 ml-sm-auto ml-md-auto mr-sm-3">
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item dropdown-toggle navigation__sign-in">
                                 <a class="navigation__sign-in" href="#">Sign In</a>
                             </li>
@@ -257,105 +261,109 @@
         </div>
     </section>
     <section class="home_banner">
-        <div class="wrapper-1720">
-            <div class="container-fluid">
-                <h1 class="home_banner__heading--primary">Welcome to Launch My Career</h1>
-                <p class="home_banner__heading--secondary">The home of The National Careers Challenge and the Careers
-                    Curriculum!
-                </p>
-                <div class="row">
-                    <div class="col-lg-6 d-flex justify-content-xl-end">
-                        <div class="card home_banner__card home_banner__card--sign-up">
-                            <div class="card-body">
-                                <h2 class="home_banner__card-heading--primary">
-                                    Create your account
-                                </h2>
-                                <p class="home_banner__card-heading--secondary-one">
-                                    Sign up. Do the quiz. <span>Find your career!</span>
-                                </p>
-                                <form class="home_banner__card-form">
-                                    <div class="d-flex flex-column justify-content-between h-100">
-                                        <div>
-                                            <div class="form-group">
-                                                <label for="firstName">First Name</label>
-                                                <input type="text" class="form-control" id="firstName"
-                                                    placeholder="Enter first name">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="lastName">Last Name</label>
-                                                <input type="text" class="form-control" id="lastName"
-                                                    placeholder="Enter last name">
-                                            </div>
+        <h1 class="home_banner__heading--primary">Welcome to Launch My Career</h1>
+        <p class="home_banner__heading--secondary">The home of The National Careers Challenge and the Careers
+            Curriculum!</p>
+        <div class="container">
+            <div class="row home_banner__row">
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                    <div class="card home_banner__card home_banner__card--sign-up my-md-5 my-lg-0">
+                        <img src="./assets/images/home/bird.png" alt="Bird Animation" class="bird">
+                        <img src="./assets/images/home/leopard.png" alt="Leopard Animation" class="leopard">
+                        <img src="./assets/images/home/bear.png" alt="Bear Animation" class="bear d-none d-lg-block">
+                        <img src="./assets/images/home/lezard.png" alt="Lezard Animation"
+                            class="lezard d-none d-lg-block">
+
+                        <div class="card-body">
+                            <h2 class="home_banner__card-heading--primary">
+                                Create your account
+                            </h2>
+                            <p class="home_banner__card-heading--secondary-one">
+                                Sign up. Do the quiz. <span>Find your career!</span>
+                            </p>
+                            <form class="home_banner__card-form">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Enter first name" required>
                                         </div>
-                                        <div>
-                                            <a href="#" class="home_banner__card-CTA d-block">
-                                                Sign Up & Take the Quiz!
-                                            </a>
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Enter last name" required>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-lg-start">
-                        <div class="card home_banner__card home_banner__card--sign-in">
-                            <div class="card-body">
-                                <div class="">
-                                    <h2 class="home_banner__card-heading--primary">
-                                        Sign In
-                                    </h2>
-                                    <p class="home_banner__card-heading--secondary-two">
-                                        Which type of account do you have?
-                                    </p>
-                                    <a href="#" class="home_banner__card-solutions">Students</a>
-                                    <a href="#" class="home_banner__card-solutions">Schools</a>
-                                    <a href="#" class="home_banner__card-solutions">Employers</a>
-                                    <a href="#" class="home_banner__card-solutions">College</a>
-                                    <a href="#" class="home_banner__card-solutions">VICTAR Code</a>
+                                    <div>
+                                        <a href="#" class="home_banner__card-CTA d-block">
+                                            Sign Up & Take the Quiz!
+                                        </a>
+                                    </div>
                                 </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                    <div class="card home_banner__card home_banner__card--sign-in">
+                        <div class="card-body">
+                            <div class="">
+                                <h2 class="home_banner__card-heading--primary">
+                                    Sign In
+                                </h2>
+                                <p class="home_banner__card-heading--secondary-two">
+                                    Which type of account do you have?
+                                </p>
+                                <a href="#" class="home_banner__card-solutions">Students</a>
+                                <a href="#" class="home_banner__card-solutions">Schools</a>
+                                <a href="#" class="home_banner__card-solutions">Employers</a>
+                                <a href="#" class="home_banner__card-solutions">College</a>
+                                <a href="#" class="home_banner__card-solutions">VICTAR Code</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="dropdown-arrow">
-                        <a href="#student">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 12a1 1 0 0 1-.71-.29l-4-4A1 1 0 0 1 8.71 6.29L12 9.59l3.29-3.29a1 1 0 0 1 1.41 1.41l-4 4A1 1 0 0 1 12 12zM12 18a1 1 0 0 1-.71-.29l-4-4a1 1 0 0 1 1.41-1.41L12 15.59l3.29-3.29a1 1 0 0 1 1.41 1.41l-4 4A1 1 0 0 1 12 18z" />
-                            </svg>
-                        </a>
-                    </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="dropdown-arrow">
+                    <a href="#student">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 12a1 1 0 0 1-.71-.29l-4-4A1 1 0 0 1 8.71 6.29L12 9.59l3.29-3.29a1 1 0 0 1 1.41 1.41l-4 4A1 1 0 0 1 12 12zM12 18a1 1 0 0 1-.71-.29l-4-4a1 1 0 0 1 1.41-1.41L12 15.59l3.29-3.29a1 1 0 0 1 1.41 1.41l-4 4A1 1 0 0 1 12 18z" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="home_banner__para">
-                    <p class="home_banner__para--first">
-                        Launch My Career was developed to offer an exciting approach to
-                        careers education, using immersive Virtual Reality technology and gamification to take young
-                        people on a journey of self-discovery. Powered by the latest LMI data, the platform helps users
-                        identify career pathways with links to colleges, courses, apprenticeships and employers, so
-                        students can develop the skills needed to successfully pursue, and flourish in, their chosen
-                        careers.
-                    </p>
-                    <p class="home_banner__para--second">
-                        Careers readiness is turbo-charged by our exciting work skills competition, The National Careers
-                        Challenge, and our comprehensive career-readiness framework, the Careers Curriculum. Over
-                        500,000 students across the country have already experienced these amazing and inspirational
-                        programmes.
-                    </p>
-                    <p class="home_banner__para--second">
-                        Discover how you can benefit from using Launch My Career and our careers readiness programmes.
-                    </p>
-                </div>
+            </div>
+            <div class="home_banner__para">
+                <p class="home_banner__para--first">
+                    Launch My Career was developed to offer an exciting approach to
+                    careers education, using immersive Virtual Reality technology and gamification to take young
+                    people on a journey of self-discovery. Powered by the latest LMI data, the platform helps users
+                    identify career pathways with links to colleges, courses, apprenticeships and employers, so
+                    students can develop the skills needed to successfully pursue, and flourish in, their chosen
+                    careers.
+                </p>
+                <p class="home_banner__para--second">
+                    Careers readiness is turbo-charged by our exciting work skills competition, The National Careers
+                    Challenge, and our comprehensive career-readiness framework, the Careers Curriculum. Over
+                    500,000 students across the country have already experienced these amazing and inspirational
+                    programmes.
+                </p>
+                <p class="home_banner__para--second">
+                    Discover how you can benefit from using Launch My Career and our careers readiness programmes.
+                </p>
             </div>
         </div>
     </section>
     <section class="student_section" id="student">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex align-items-end order-md-2 order-lg-1">
                     <img src="./assets/images/home/home_student.png" alt="I'm a Student" class="student_section__image">
                 </div>
-                <div class="col-lg-6">
+                <div
+                    class="col-lg-6 d-flex align-items-end justify-content-md-center my-lg-0 my-md-5 order-md-1 order-lg-2">
                     <div class="student_section__student">
                         <h2 class="student_section__heading--primary">
                             I'm a student
@@ -363,7 +371,7 @@
                         <p class="student_section__heading--secondary">
                             I want to...
                         </p>
-                        <p class="student_section__feature d-flex align-content-center">
+                        <p class="student_section__feature">
                             <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512">
                                 <polygon fill="#5A47C3"
                                     points="102.6 494.1 137 320.1 6 200.5 182.1 179.5 255.3 17.9 329.7 178.9 506 198.6 375.9 319.2 411.6 492.9 256.8 406.4" />
@@ -457,7 +465,7 @@
     <section class="educator_section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex align-items-end justify-content-md-center my-lg-0 my-md-5">
                     <div class="educator_section__educator">
                         <h2 class="educator_section__heading--primary">I'm an educator</h2>
                         <p class="educator_section__heading--secondary">I want to...</p>
@@ -545,9 +553,21 @@
                         <a href="#"><button class="educator_section__CTA">Let's Go!</button></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex align-items-end">
                     <img src="./assets/images/home/home-educator.png" alt="I'm an Educator"
-                        class="educator_section__image" />
+                        class="educator_section__image-educator" />
+                    <div class="educator_section__image-educator__big-circle">
+                        <svg width="347" height="347" viewBox="0 0 347 347">
+                            <circle id="Ellipse_17" data-name="Ellipse 17" cx="173.5" cy="173.5" r="173.5"
+                                fill="#e93692" opacity="0.643" />
+                        </svg>
+                    </div>
+                    <div class="educator_section__image-educator__small-circle">
+                        <svg width="133" height="133" viewBox="0 0 133 133">
+                            <circle id="Ellipse_19" data-name="Ellipse 19" cx="66.5" cy="66.5" r="66.5" fill="#e93692"
+                                opacity="0.643" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>

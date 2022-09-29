@@ -13,7 +13,7 @@
 
 <body>
     <section class="navigation" id="top">
-        <div class="wrapper">
+        <div class="wrapper-1720">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-xl navbar-light">
                     <a class="navbar-brand navigation__logo" href="./index.html">
@@ -194,13 +194,13 @@
                             </g>
                         </svg>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler order-md-2" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse navigation__tab" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse navigation__tab order-lg-1" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link topNavLink" href="./index.html">Home</a>
@@ -247,6 +247,15 @@
                                     </a>
                                 </div>
                             </li>
+                        </ul>
+                        <!-- <ul class="navbar-nav align-items-center">
+                            <li class="nav-item dropdown-toggle navigation__sign-in">
+                                <a class="navigation__sign-in" href="#">Sign In</a>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <div class="order-md-1 order-lg-2 ml-md-auto mr-md-3">
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item dropdown-toggle navigation__sign-in">
                                 <a class="navigation__sign-in" href="#">Sign In</a>
                             </li>
@@ -419,7 +428,7 @@
                 <h2>
                     our partners
                 </h2>
-                <div class="d-flex flex-xl-wrap justify-content-md-between align-items-center">
+                <!-- <div class="d-flex flex-xl-wrap justify-content-md-between align-items-center">
                     <img src="./assets/images/partners/TILG.png" alt="TILG Logo">
                     <img src="./assets/images/partners/veative.png" alt="Veative Logo">
                     <img src="./assets/images/partners/Lenovo.png" alt="Lenovo Logo">
@@ -431,7 +440,7 @@
                     <img src="./assets/images/partners/solihull.png" alt="Solihull College and University Center">
                     <img src="./assets/images/partners/wolvo-college.png" alt="City of Wolverhampton College">
 
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -527,51 +536,62 @@
     </section>
 
     <footer>
-        <div class="wrapper-1350">
-            <div class="footer__BGI">
-                <img src="./assets/images/footer/footer-topMask.png" alt="">
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="footer">
-                                    <h3>Launch My Career</h3>
-                                    <p class="leftFooterNav">
-                                        <a href="./students.html">
-                                            Students
-                                        </a>
-                                    </p>
-                                    <p class="leftFooterNav">
-                                        <a href="./educators.html">
-                                            Educators
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="footer">
-                                    <h3>Get in touch</h3>
-                                    <p class="leftFooterNav">
-                                        <a href="./contact-us.html">
-                                            Contact us
-                                        </a>
-                                    </p>
-                                    <p class="leftFooterNav">
-                                        <a href="./about-us.html">
-                                            About us
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="footer__BGI">
+            <img src="./assets/images/footer/footer-topMask.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-list">
+                        <h3 class="d-flex align-items-center">Launch My Career <svg enable-background="new 0 0 24 24"
+                                viewBox="0 0 24 24">
+                                <path d="M9.9,17.2c-0.6,0-1-0.4-1-1c0-0.3,0.1-0.5,0.3-0.7l3.5-3.5L9.2,8.5c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l4.2,4.2
+                            c0.4,0.4,0.4,1,0,1.4c0,0,0,0,0,0l-4.2,4.2C10.4,17.1,10.1,17.2,9.9,17.2z" />
+                            </svg></h3>
+                        <ul>
+                            <li>
+                                <a href="./students.html">
+                                    Students
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./educators.html">
+                                    Educators
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="footer social">
-                            <h3>Keep up with all things careers</h3>
-                            <p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-list">
+                        <h3 class="d-flex align-items-center">Get in touch <svg enable-background="new 0 0 24 24"
+                                viewBox="0 0 24 24">
+                                <path d="M9.9,17.2c-0.6,0-1-0.4-1-1c0-0.3,0.1-0.5,0.3-0.7l3.5-3.5L9.2,8.5c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l4.2,4.2
+                            c0.4,0.4,0.4,1,0,1.4c0,0,0,0,0,0l-4.2,4.2C10.4,17.1,10.1,17.2,9.9,17.2z" />
+                            </svg></h3>
+                        <ul>
+                            <li>
+                                <a href="./contact-us.html">
+                                    Contact us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about-us.html">
+                                    About us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-list social">
+                        <h3 class="d-flex align-items-center">Keep up with all things careers <svg
+                                enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                                <path d="M9.9,17.2c-0.6,0-1-0.4-1-1c0-0.3,0.1-0.5,0.3-0.7l3.5-3.5L9.2,8.5c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l4.2,4.2
+                            c0.4,0.4,0.4,1,0,1.4c0,0,0,0,0,0l-4.2,4.2C10.4,17.1,10.1,17.2,9.9,17.2z" />
+                            </svg></h3>
+                        <ul>
+                            <li>
                                 <a href="https://www.facebook.com/TILG.UK" class="d-flex align-items-center">
                                     <svg width="24" height="24" viewBox="0 0 24 24">
                                         <path id="_5282541_fb_social_media_facebook_facebook_logo_social_network_icon"
@@ -580,8 +600,8 @@
                                             fill="#fff" fill-rule="evenodd" />
                                     </svg>@TILG.UK
                                 </a>
-                            </p>
-                            <p>
+                            </li>
+                            <li>
                                 <a href="https://twitter.com/TILG_UK" class="d-flex align-items-center">
                                     <svg width="24" height="24" viewBox="0 0 24 24">
                                         <path id="_5282551_tweet_twitter_twitter_logo_icon"
@@ -590,8 +610,8 @@
                                             fill="#fff" fill-rule="evenodd" />
                                     </svg>@TILG.UK
                                 </a>
-                            </p>
-                            <p>
+                            </li>
+                            <li>
                                 <a href="https://www.instagram.com/tilg_uk/" class="d-flex align-items-center">
                                     <svg width="24" height="24" viewBox="0 0 24 24">
                                         <path
@@ -601,8 +621,8 @@
                                             fill="#fff" fill-rule="evenodd" />
                                     </svg>@tilg_uk
                                 </a>
-                            </p>
-                            <p>
+                            </li>
+                            <li>
                                 <a href="https://www.linkedin.com/company/the-inspirational-learning-group-limited"
                                     class="d-flex align-items-center">
                                     <svg width="24" height="24" viewBox="0 0 24 24">
@@ -612,29 +632,32 @@
                                             fill="#fff" fill-rule="evenodd" />
                                     </svg>The Inspirational Learning Group
                                 </a>
-                            </p>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="footer mt-5 pt-5">
-                    <h2>Launch My Career</h2>
-                    <ul class="list-group flex-row align-items-xl-end">
-                        <li class="list-group-item">Copyright © 2022 Launchmycareer.co.uk. All Rights Reserved.</li>
-                        <li class="list-group-item">Privacy & Cookie Policy</li>
-                        <li class="list-group-item">Data Protection</li>
-                        <p class="ml-md-auto back-to-top">
-                            <a href="#Top">
-                                Back to top
-                            </a>
-                        </p>
-                    </ul>
-                </div>
+        </div>
+        <div class="container">
+            <div class="footer-list mt-5 pt-5">
+                <h2>Launch My Career</h2>
+                <ul class="list-group flex-lg-row">
+                    <li class="list-group-item">Copyright © 2022 Launchmycareer.co.uk. All Rights Reserved.</li>
+                    <li class="list-group-item pl-lg-3 pl-md-0 mb-md-0">Privacy & Cookie Policy</li>
+                    <li class="list-group-item d-md-none d-lg-block">Data Protection</li>
+                    <li class="list-group-item ml-0 ml-lg-auto pl-md-0 back-to-top">
+                        <a href="#Top">
+                            Back to top
+                        </a>
+                    </li>
+                    <p class="">
+
+                    </p>
+                </ul>
             </div>
         </div>
     </footer>
-    <section class="back-To-Top" id="bTTop">
+    <!-- <section class="back-To-Top" id="bTTop">
         <svg width="24" height="24" viewBox="0 0 24 24">
             <path
                 d="M12 12a1 1 0 0 1-.71-.29l-4-4A1 1 0 0 1 8.71 6.29L12 9.59l3.29-3.29a1 1 0 0 1 1.41 1.41l-4 4A1 1 0 0 1 12 12zM12 18a1 1 0 0 1-.71-.29l-4-4a1 1 0 0 1 1.41-1.41L12 15.59l3.29-3.29a1 1 0 0 1 1.41 1.41l-4 4A1 1 0 0 1 12 18z" />
@@ -642,7 +665,7 @@
         <span>
             Back To Top
         </span>
-    </section>
+    </section> -->
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
